@@ -1,0 +1,58 @@
+p
+{
+  text-align: center;
+  color: black;
+  font-size:125%;
+}
+table
+{
+  border:thick solid grey;
+  border-collapse:collapse;
+  width:50%;
+}
+th, td
+{
+  border:thick solid black;
+  padding:8px;
+  text-align: center;
+  font-size:125%;
+}
+h1
+{
+  font-size:150%;
+}
+h2
+{
+  font-size:125%;
+  text-align: center;
+}
+h3
+{
+  font-size:150%;
+  color:red;
+  text-align: center;
+}
+.action-button
+{
+  padding: 10px 15px;
+  font-size: 13pt;
+  text-align:center;
+}
+.center
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+body
+{
+  background-color:rgb(255, 250, 228);
+}
+input
+{
+  background-color:cornsilk;
+  font-size:125%;
+}
+div
+{
+  text-align: center;
+}

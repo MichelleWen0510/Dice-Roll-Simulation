@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roll Roll Roll Your Dice</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="initialize();">
+    <p>Input the amount dice you want to have. Then input the amount of rolls. <br />Then click the get data button. <br />Clear your data before trying again. Also clear your data if your parameters were wrong the first time.</p>
+    <form id="inputform">
+      <h2>Number of Dice (min. 1, max. 3):</h2> <div> <input name="diceA" type="number" min="1" max="3"> <br /> </div>
+      <h2>Number of Roll (min. 1):</h2> <div> <input name="rollN" type="number" min="1"> <hr /> </div>
+    </form>
+    <div> <button class="action-button" onclick="getData();"> Click here to get data </button>
+    <button class="action-button" onclick="clearTable();"> Clear data </button> </div>
+    <hr />
+    <table class="center">
+      <tr>
+        <th>Mean of Results:</th>
+        <td id="meanRes"></td>
+        <th>Amount of Ones:</th>
+        <td id="fOne"></td>
+      </tr>
+      <tr>
+        <th>Median of Results:</th>
+        <td id="medianRes"></td>
+        <th>Amount of Twos:</th>
+        <td id="fTwo"></td>
+      </tr>
+      <tr>
+        <th>Mode of Results:</th>
+        <td id="modeRes"></td>
+        <th>Amount of Threes:</th>
+        <td id="fThree"></td>
+      </tr>
+      <tr>
+        <th>Frequency of Doubles:</th>
+        <td id="doubles"></td>
+        <th>Amount of Fours:</th>
+        <td id="fFour"></td>
+      </tr>
+      <tr>
+        <th>Frequency of Triples:</th>
+        <td id="triples"></td>
+        <th>Amount of Fives:</th>
+        <td id="fFive"></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td></td>
+        <th>Amount of Sixes:</th>
+        <td id="fSix"></td>
+      </tr>
+    </table>
+    <hr />
+    <table id = "dicetable" class="center">
+      <tr>
+        <th>Roll</th>
+        <th>Dice One</th>
+        <th>Dice Two</th>
+        <th>Dice Three</th>
+      </tr>
+    </table>
+    <h3 id="cor"></h3>
+  </body>
+</html>
